@@ -39,6 +39,10 @@
     #hero > .hero-curve--top {
       inset-block-start: -80px !important;
     }
+
+    .team .member .pic {
+    border-radius: unset;
+}
   </style>
 
 </head>
@@ -56,11 +60,18 @@
 
       <nav id="navbar" class="navbar | ms-auto">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li class="dropdown"><a href="venues.html"><span>Venues</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="venues.html#sage">Sage</a></li>
+              <li><a href="venues.html#jun">Juniper</a></li>
+              <li><a href="venues.html#olive">Olive</a></li>
+              <li><a href="venues.html#fern">Fern</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="index.html#about">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -73,7 +84,7 @@
     <div class="hero-curve--top | position-absolute top-0 start-0 | d-none d-lg-block"  data-aos="fade-down-right">
         <svg class="w-100" height="312" viewBox="0 0 1583 312" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_4_14)">
-            <path d="M846 242.5C1147 290 1316.5 66.6667 1399 -38C1513.8 -107.2 1491.5 -202.833 1466 -242L1177 -111.5C911.4 30.1 627.333 -64.8333 518.5 -130C359.3 -252.8 165.167 -286.833 88.0002 -288.5C-161.6 -296.5 -152 -134.833 -116 -53C-189.6 34.2 -116.833 213.333 -55.4999 290C99.0001 361 197 244.333 286.5 207.5C429.3 147.5 765.5 230.5 846 242.5Z" fill="#1E1E1E" fill-opacity="0.5"/>
+            <path d="M846 242.5C1147 290 1316.5 66.6667 1399 -38C1513.8 -107.2 1491.5 -202.833 1466 -242L1177 -111.5C911.4 30.1 627.333 -64.8333 518.5 -130C359.3 -252.8 165.167 -286.833 88.0002 -288.5C-161.6 -296.5 -152 -134.833 -116 -53C-189.6 34.2 -116.833 213.333 -55.4999 290C99.0001 361 197 244.333 286.5 207.5C429.3 147.5 765.5 230.5 846 242.5Z" fill="#1E1E1E" fill-opacity="0.75"/>
             </g>
             <defs>
             <clipPath id="clip0_4_14">
@@ -99,8 +110,10 @@
         
 
     <div class="container">
-        <div class="col-md-6 shadow-lg rounded p-3 d-flex justify-content-center | mx-auto" style="background-color: #7d8c7c !important; height: 25rem;"  data-aos="zoom-in" data-aos-delay="200">
-            <img src="assets/img/Logo.png" class="img-fluid animated rounded" alt="" style="height: 20rem;">
+        <div class="col-md-6 shadow-lg rounded p-3 d-flex justify-content-center | mx-auto"  data-aos="zoom-in" data-aos-delay="200">
+            <!-- <img src="assets/img/Logo.png" class="img-fluid animated rounded" alt="" style="height: 20rem;"> -->
+             <img src="assets/img/center-logo.png" class="img-fluid animated rounded" alt="" style="height: 20rem;">
+            <img src="assets/img/New-Squiggle-Comp-OrangeVersion-1.gif" style=" position: absolute; width: 100%; height: -webkit-fill-available;" />
           </div>
       <div class="rowX d-none">
         <!-- <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"  data-aos="fade-up" data-aos-delay="200">
@@ -311,7 +324,7 @@
 
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box | rounded-3">
               <div class="icon"><img src="https://preview2.digitlsky.com/bonza/images/2901643-8b07bfdc.png" height="30"/></div>
               <h4><a href="">Wi-Fi</a></h4>
               <p>Wi-Fi with high speed internet access Hybrid events and virtual conference co-ordination</p>
@@ -319,7 +332,7 @@
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
+            <div class="icon-box | rounded-3">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4><a href="">Staging & Equipment</a></h4>
               <p>Presentation, audio/visual staging options available
@@ -329,7 +342,7 @@
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
+            <div class="icon-box | rounded-3">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
               <h4><a href="">Banqueting and catering</a></h4>
               <p>Range of catering and refreshment options. Dietary needs can be accommodated</p>
@@ -337,7 +350,7 @@
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
+            <div class="icon-box | rounded-3">
               <div class="icon"><i class="bx bx-layer"></i></div>
               <h4><a href="">Parking</a></h4>
               <p>Free parking is available on a first come, first serve basis.
@@ -345,8 +358,8 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="500">
-            <div class="icon-box">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
+            <div class="icon-box | rounded-3">
               <div class="icon"><i class="bx bx-layer"></i></div>
               <h4><a href="">Wheelchair Friendly</a></h4>
               <p>Hotel and conference centre facilities are wheelchair-friendly
@@ -356,8 +369,8 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="600">
-            <div class="icon-box">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="600">
+            <div class="icon-box | rounded-3">
               <div class="icon"><i class="bx bx-layer"></i></div>
               <h4><a href="">Quality Service & Staff</a></h4>
               <p>Our staff are are professionally trained to make sure we meet your every need. We are fully equipped to deal with every techincal problem and your catering needs are always on the top of our list.</p>
@@ -391,7 +404,7 @@
 
         <div class="section-title">
           <h2>Gallery</h2>
-          <p>Get some insite into our venue</p>
+          <p class="w-75 mx-auto">Get some insite into our venue</p>
         </div>
 
         <!-- <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -468,18 +481,20 @@
 
         <div class="section-title">
           <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p class="w-75 mx-auto">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/Jaqueline.jpg" class="img-fluid rounded" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <h4>Jacqueline Austin</h4>
+                <span>Director</span>
+                <p>Tel:  +27 (0) 71 681 3833 / Tel:  +27 (0) 66 217 0318E</p>
+                <p>Cell: +27 (0) 71 475 0616</p>
+                <p>Email:  Jacqui@conferenceonbonza.co.za</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -492,11 +507,12 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/Billy.jpg" class="img-fluid rounded" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>Billy Moorcroft </h4>
+                <span>Director</span>
+                <p>Cell:  +27 (0) 71 194 2463</p>
+                <p>Email:  billy@conferenceonbonza.co.za</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -509,11 +525,12 @@
 
           <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/Jennifer.jpg" class="img-fluid rounded" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <h4>Jennifer Van der Westhuizen</h4>
+                <span>Conference Administrator</span>
+                <p>Tel:  +27 (0) 66 217 0318  / Tel:  +27 (0) 71 681 3833 </p>
+                <p>Email:  Jen@conferenceonbonza.co.za</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -524,7 +541,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+          <!-- <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
@@ -539,7 +556,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -553,7 +570,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p class="w-75 mx-auto">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
